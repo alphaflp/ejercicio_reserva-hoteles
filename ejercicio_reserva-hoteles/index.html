@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivago</title>
+    <script src="./js/functs.js"></script>
+</head>
+<body>
+    <center><h1>Reservas Trivago</h1></center>
+    <h4>Número de adultos:</h4>
+    <select name="adt" id="adt" onchange="fadt(this);">
+        <option value="0" selected>0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <div id="n-adt"></div>
+    <div id="e-adt"></div>
+    <h4>Número de niños:</h4>
+    <select name="adt" id="peq" onchange="fpeq(this);">
+        <option value="0" selected>0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <div id="n-peq"></div>
+    <div id="e-peq"></div>
+    <button type="submit" onclick="fmsj();">Enviar</button>
+</body>
+</html>
